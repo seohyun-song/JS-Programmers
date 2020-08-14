@@ -1,4 +1,5 @@
 function solution(s) {
+    //converts a string to lowercase letters
     var str = s.toLowerCase();
     var numP = 0;
     var numY = 0;
