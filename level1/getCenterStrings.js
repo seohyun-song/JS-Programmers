@@ -6,4 +6,5 @@ function solution(s) {
     } else {
         return s[i];
     }
+    fhygffhfhj
 }
