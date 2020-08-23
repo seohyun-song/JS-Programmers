@@ -1,7 +1,7 @@
 function solution(strings, n) {
     /*
         arr.sort([compareFunction])
-        compareFunction이 제공되지 않으면 요소를 문자열ㄹ로 변환하고 유니코드 포인트 순서로 문자열을 비교하여 정렬
+        compareFunction이 제공되지 않으면 요소를 문자열로 변환하고 유니코드 포인트 순서로 문자열을 비교하여 정렬
         a>b return 1 -> b a순 정렬
         a<b return -1 -> a b순 정렬
         a==b return 0 -> 그대로
