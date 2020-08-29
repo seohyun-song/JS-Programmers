@@ -1,5 +1,5 @@
 function solution(arr1, arr2) {
-    var output=[[]];
+    var output=[];
     //다음코드 없으면 안됨
     for(var z=0; z<arr1.length; z++){output.push([]);}
     for(var i=0; i<arr1.length; i++){
