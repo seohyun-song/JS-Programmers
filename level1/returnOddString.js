@@ -3,6 +3,11 @@ function solution(s) {
     var count = 0;
     var output = '';
 
+    /*
+        The term 'array-like' usually refers to an object having an integer-valued .length property and
+        correspondingly many elements stored in integer-keyed properties, so that we can access them by index
+        like an array. String cetainly fullfull that requirement.
+     */
     for(var i=0; i<s.length; i++) {
         if(s[i] == ' ') {
             output += ' ';
