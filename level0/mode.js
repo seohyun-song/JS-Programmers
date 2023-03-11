@@ -24,3 +24,15 @@ function solution(array) {
     return compareArr[0].value;
   }
 }
+
+// 다른 사람 풀이
+function solution(array) {
+  let answer = 0; // 최빈값
+  let max = 0; // 최빈수
+  const count = new Array(1000); // 0 ≤ array의 원소 < 1000
+
+  for (let i = 0; i < array.length; i++) {
+    count[i]++;
+    console.log(count[i]);
+  }
+}
