@@ -6,6 +6,8 @@
  * 구슬을 고르는 순서는 고려하지 않습니다.
  * share ≤ balls
  *
+ * 자바스크립트의 Max_Safe_INTEGER값은 2^53-1으로 낮다. 안전 범위보다 큰 수를 변수에 저장은 할 수 있으나 정확성을 보장되지 않는다.
+ * 따라서 BigInt를 사용해 길이의 제약없이 정수를 다룰 수 있다.
  */
 function solution(balls, share) {
   if (balls == share) return 1; // 구슬 수와 구술 고르는 수가 같은 경우 한 가지
