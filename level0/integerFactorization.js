@@ -21,19 +21,19 @@ function solution(n) {
 }
 
 // 다른 사람 풀이
-// Set???
+// ...new Set(result): 중복값 제거
 function solution(n) {
   let answer = [];
+  let divisor = 2;
 
-  let i = 2;
-  while (i <= n) {
-    if (n % i === 0) {
-      answer.push(i);
-      n = n / i;
+  while (n >= 2) {
+    if (n % divisor === 0) {
+      answer.push(divisor);
+      n = n / divisor;
     } else {
-      i++;
+      divisor++;
     }
   }
 
-  return [...new Set(answer.sort((a, b) => (a > b ? 1 : -1)))];
+  return [...new Set(result)];
 }
