@@ -27,6 +27,7 @@ function solution(score) {
 }
 
 // 다른 사람 풀이
+// sort() & indexOf() 활용
 function solution2(score) {
   // 1. score의 평균 점수 구함
   let avg = score.map((v) => (v[0] + v[1]) / 2);
