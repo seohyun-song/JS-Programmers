@@ -24,16 +24,13 @@ function solution(n) {
 // ...new Set(result): 중복값 제거
 function solution(n) {
   let answer = [];
-  let divisor = 2;
 
-  while (n >= 2) {
-    if (n % divisor === 0) {
-      answer.push(divisor);
-      n = n / divisor;
-    } else {
-      divisor++;
+  for (let i = 2; i <= n; i++) {
+    while (n % i === 0) {
+      n = n / i;
+      answer.push(i);
     }
   }
 
-  return [...new Set(result)];
+  return [...new Set(answer)];
 }
